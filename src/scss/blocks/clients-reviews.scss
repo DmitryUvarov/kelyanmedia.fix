@@ -1,0 +1,75 @@
+.clients {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 23px;
+}
+
+.clients-reviews {
+	background-image: url('../img/bg-main.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	padding: 55px 0 80px;
+}
+
+.reviews__title {
+	font-weight: 700;
+	font-size: 17px;
+	margin-bottom: 12px;
+}
+
+.reviews__text {
+	font-weight: 400;
+	font-size: 13px;
+
+	color: #858585;
+}
+
+.reviews__img {
+	display: block;
+	margin-right: 17px;
+
+	@media($media_sm2) {
+		max-width: 70px;
+	}
+}
+
+.reivews__item {
+	background: rgba(42, 42, 42, 0.9);
+	padding: 18px;
+	margin-bottom: 11px;
+	font-family: FuturaPT;
+}
+
+.clients-reviews__main {
+	margin-top: 40px;
+}
+
+.reviews {
+	max-width: 530px;
+	max-height: 355px;
+	overflow-y: auto;
+
+	scrollbar-color: #4F6EA4 transparent;
+	/* «цвет ползунка» «цвет полосы скроллбара» */
+	scrollbar-width: thin;
+	/* толщина */
+
+	/* полоса прокрутки (скроллбар) */
+	&::-webkit-scrollbar {
+		width: 15px;
+		/* высота для горизонтального скролла */
+		background-color: none;
+	}
+
+	/* ползунок скроллбара */
+	&::-webkit-scrollbar-thumb {
+		background: #4F6EA4;
+		border-radius: 30px;
+	}
+}
+
+.clients__img {
+	display: block;
+	margin: auto;
+}

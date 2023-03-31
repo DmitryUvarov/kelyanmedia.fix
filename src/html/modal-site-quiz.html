@@ -1,0 +1,176 @@
+<div id="smm-quiz" class="modal modal-quiz">
+    <div class="modal-quiz__body">
+        <form id="quiz_form_site" class="" action="" method="post">
+            <div class="quiz__form__header">
+                <div class="quiz__logo__white">
+                    <img class="quiz__logo" src="img/logo.png" alt="">
+                </div>
+                <div class="quiz__logo__black hidden">
+                    <img class="quiz__logo" src="img/logo-black.png" alt="">
+                </div>
+                <button class="modal__close quiz__close">
+                    <img src="img/quiz/close.svg" alt="">
+                </button>
+            </div>
+            <div role="tab-list" class="quiz__form__content">
+                <div role="tabpanel" data-percent="0" id="color" class="tabpanel">
+                    <div class="quiz__row">
+                        <div class="quiz__left_part">
+                            <img class="quiz__form__first" src="img/quiz/quiz_img.png" alt="">
+                        </div>
+                        <div class="quiz__right_part">
+                            <h3>
+                                Пройдите опрос и получите
+                                просчет вашего веб-сайта
+                            </h3>
+                            <h3>
+                                Реализуем интернет ресурсы любой сложности
+                            </h3>
+                            <p>
+                                Вы получаете проект, реализованный
+                                экспертами с международным опытом
+                            </p>
+                            <button id="begin_step" class="website-dev__btn quiz__btn"
+                                    style="display: inline-block;">начать опрос
+                                <svg width="15" height="13" viewBox="0 0 15 13" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.42857 1L14 6.5L8.42857 12M1 6.5H14" stroke="#4F6EA4"
+                                          stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                <div role="tabpanel" data-percent="0" id="type" class="tabpanel hidden">
+                    <h3 class="quiz__title text-align-left">Какой веб-сайт вы хотите реализовать?</h3>
+                    <div class="quiz__group_radio">
+                        <div class="radio">
+                            <input class="custom-radio" type="radio" id="type-1" name="type_site" value="Лендинг">
+                            <label for="type-1">Лендинг - одностраничный сайт</label>
+                        </div>
+
+                        <div class="radio">
+                            <input class="custom-radio" type="radio" id="type-2" name="type_site" value="Интернет магазин">
+                            <label for="type-2">Интернет магазин</label>
+                        </div>
+
+                        <div class="radio">
+                            <input class="custom-radio" type="radio" id="type-4" name="type_site" value="Корпоративный">
+                            <label for="type-4">Многостраничный / Корпоративный сайт</label>
+                        </div>
+
+                        <div class="radio">
+                            <input class="custom-radio" type="radio" id="type-5" name="type_site" value="Cложный">
+                            <label for="type-5">Более сложный интернет ресурс</label>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" id="occupation" data-percent="33" class="tabpanel hidden">
+                    <h3 class="quiz__title text-align-left">На скольких языках вы хотите сделать веб-сайт?</h3>
+                    <div class="quiz__group_radio">
+                        <div class="radio">
+                            <input class="custom-radio" type="radio" id="lang-1" name="lang_site" value="1 язык">
+                            <label for="lang-1">1 язык</label>
+                        </div>
+
+                        <div class="radio">
+                            <input class="custom-radio" type="radio" id="lang-2" name="lang_site" value="2 языка">
+                            <label for="lang-2">2 языка</label>
+                        </div>
+
+                        <div class="radio">
+                            <input class="custom-radio" type="radio" id="lang-3" name="lang_site" value="3 языка">
+                            <label for="lang-3">3 языка</label>
+                        </div>
+
+                        <div class="radio">
+                            <input class="custom-radio" type="radio" id="lang-4" name="lang_site" value="4 и более">
+                            <label for="lang-4">4 и более</label>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" id="admin" data-percent="67" class="tabpanel hidden">
+                    <h3 class="quiz__title text-align-left">На сайте должна быть возможность самостоятельно добавлять товары либо статьи?</h3>
+                    <div class="quiz__group_radio">
+                        <div class="radio">
+                            <input class="custom-radio" type="radio" id="admin-1" name="admin_site" value="Да">
+                            <label for="admin-1">Да</label>
+                        </div>
+
+                        <div class="radio">
+                            <input class="custom-radio" type="radio" id="admin-2" name="admin_site" value="Нет">
+                            <label for="admin-2">Нет, не нужно</label>
+                        </div>
+
+                        <div class="radio">
+                            <input class="custom-radio" type="radio" id="admin-3" name="admin_site" value="Надо обсудить детали">
+                            <label for="admin-3">Надо обсудить детали...</label>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" id="quiz_end" data-percent="100" class="tabpanel hidden">
+                    <div class="quiz__row">
+                        <div class="quiz__left_part">
+                            <img src="img/quiz/quiz_end.png" alt="">
+                            <h3>Спасибо, что заполнили форму.</h3>
+                            <p>Заполните, пожалуйста, ваши данные, чтобы получить просчет вашего проекта</p>
+                        </div>
+                        <div class="quiz__right_part">
+                            <div class="control__input">
+                                <input type="text" name="quiz_name" placeholder="Ваше имя*" required>
+                            </div>
+                            <div class="control__input">
+                                <input type="text" name="quiz_phone" placeholder="Номер телефона*" required>
+                            </div>
+                            <div class="control__input">
+                                <button id="end_step" class="website-dev__btn quiz__btn quiz__btn_end"
+                                        style="display: inline-block;">
+                                    Просчитать мой проект
+                                </button>
+                            </div>
+                            <label class="wrapper__checkbox">Я согласен с условиями обработки <br> персональных данных
+                                <input type="checkbox" checked="checked" class="check-highload">
+                                <span class="highload2"></span>
+                            </label>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="quiz__footer hidden">
+                <div class="progressbar hidden">
+                    <p class="wrapper_percent">
+                        Готово: <span class="digit__percent">0%</span>
+                    </p>
+                    <span class="progress"></span>
+                </div>
+                <div class="tab-status hidden">
+                    <span class="tab active">1</span>
+                    <span class="tab">2</span>
+                    <span class="tab">3</span>
+                    <span class="tab">4</span>
+                    <span class="tab">5</span>
+                </div>
+                <div class="pagination">
+                    <a class="quiz__prev hidden " id="prev">
+                        <svg width="15" height="13" viewBox="0 0 15 13" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.42857 1L14 6.5L8.42857 12M1 6.5H14" stroke="#E7E7E7"
+                                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </a>
+                    <a id="next" class="quiz__next hidden">далее
+                        <svg width="15" height="13" viewBox="0 0 15 13" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.42857 1L14 6.5L8.42857 12M1 6.5H14" stroke="#fff"
+                                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </a>
+                    <button class="btn btn-submit hidden" id="submit">Просчитать мой проект</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>

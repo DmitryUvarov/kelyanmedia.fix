@@ -1,0 +1,51 @@
+.text-block {
+	padding: 80px 0;
+
+	h2 {
+		max-width: 700px;
+	}
+}
+
+.text-block__main {
+	gap: 20px;
+
+	@media($media_sm) {
+		flex-direction: column-reverse;
+	}
+}
+
+.text-block__text {
+	font-size: 16px;
+	margin-top: 20px;
+	color: #858585;
+	max-width: 700px;
+	display: -webkit-box;
+	-webkit-line-clamp: 4; // количество строк
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+
+	transition: all .3s;
+
+	&.active {
+		display: block;
+		-webkit-line-clamp: none;
+		-webkit-box-orient: horizontal;
+	}
+}
+
+.text-block__btn {
+	color: #407BFF;
+	margin-top: 20px;
+}
+
+.text-block__btn.text-block__btn2 {
+	display: none;
+}
+
+.text-block__btn.active.text-block__btn1 {
+	display: none;
+}
+
+.text-block__btn.active.text-block__btn2 {
+	display: block;
+}

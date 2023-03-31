@@ -1,0 +1,275 @@
+.marketing-types__title {
+	font-weight: 700;
+	font-size: 37px;
+	/* identical to box height, or 216% */
+
+	text-transform: uppercase;
+	text-align: center;
+
+	color: #FFFFFF;
+
+	@media($media_sm2) {
+		font-size: 26px;
+	}
+
+	&--sm {
+		font-size: 28px;
+		
+	}
+}
+
+.marketing__types {
+	font-family: FuturaPT;
+}
+
+.marketing-types__subtitle {
+	font-size: 15px;
+}
+
+.marketing-types__item {
+	border-radius: 50%;
+	min-width: 186px;
+	min-height: 186px;
+	max-width: 186px;
+	max-height: 186px;
+	border: 16px solid #D9DEE7;
+	background: #232323;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	@media($media_sm) {
+		flex-basis: 45%;
+	}
+
+	@media($media_sm2) {
+		min-width: 150px;
+		min-height: 150px;
+		max-width: 150px;
+		max-height: 150px;
+		border: 10px solid #D9DEE7;
+	}
+}
+
+.marketing-types__main {
+	grid-gap: 63px;
+
+	@media($media_lg3) {
+		grid-gap: 40px 20px;
+	}
+
+	@media($media_md) {
+		flex-wrap: wrap;
+	}
+}
+
+.marketing__types {
+	margin: 80px 0 90px;
+}
+
+.marketing-road__main {
+	margin-top: 46px;
+}
+
+.marketing-road__item {
+	font-family: FuturaPT;
+	grid-gap: 52px;
+	margin-bottom: 31px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	@media($media_md2) {
+		flex-direction: column-reverse;
+		grid-gap: 20px;
+
+		&--left {
+			flex-direction: column;
+		}
+	}
+}
+
+.marketing-road__title {
+	font-weight: 700;
+	font-size: 21px;
+	/* identical to box height, or 119% */
+
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+}
+
+.marketing-road__text-block {
+	clip-path: polygon(0 0, 75% 0%, 100% 50%, 75% 100%, 0 100%, 0% 50%);
+	padding: 32px;
+	background: rgba(42, 42, 42, 0.61);
+	flex-grow: 1;
+
+	&--left {
+		clip-path: polygon(25% 0, 100% 0, 100% 50%, 100% 100%, 25% 100%, 0% 50%);
+		padding-left: 250px;
+	}
+
+	@media($media_lg2) {
+		&--left {
+			padding-left: 150px;
+		}
+	}
+
+	@media($media_md2) {
+		width: 100%;
+		clip-path: polygon(0 0, 90% 0%, 100% 50%, 90% 100%, 0 100%, 0% 50%);
+
+		&--left {
+			padding-left: 32px;
+		}
+	}
+}
+
+.marketing-road__text {
+	color: #858585;
+	font-size: 18px;
+	margin-top: 13px;
+	max-width: 580px;
+}
+
+.marketing__road {
+	background-image: url('../img/bg-main.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 55px 0;
+}
+
+.marketing-road__num {
+	border: 11px solid rgba(79, 110, 164, 0.19);
+	background: transparent;
+	min-width: 132px;
+	min-height: 132px;
+	max-width: 132px;
+	max-height: 132px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+	font-size: 60px;
+	/* or 133% */
+
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+
+	@media($media_md2) {
+		font-size: 40px;
+		min-width: 100px;
+		min-height: 100px;
+		max-width: 100px;
+		max-height: 100px;
+	}
+}
+
+.marketing-in__main {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin-top: 46px;
+
+	@media($media_md) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@media($media_sm2) {
+		grid-template-columns: 1fr;
+	}
+}
+
+.marketing-in__item {
+	border: 1px solid #D9D9D9;
+	font-family: SFUIDisplay;
+	height: 368px;
+	padding: 22px;
+	position: relative;
+
+	@media($media_sm) {
+		height: auto;
+		padding: 15px;
+
+		.website-dev__btn {
+			padding: 15px;
+		}
+	}
+
+	&:hover {
+		.marketing-in__img {
+			opacity: 1;
+		}
+
+		.marketing-in__num,
+		.marketing-in__text {
+			color: $white;
+		}
+
+		.marketing-in__icon {
+			display: none;
+
+			&--hidden {
+				display: block;
+			}
+		}
+
+		.website-dev__btn {
+			color: $white;
+			border-color: $white;
+
+			path {
+				stroke: $white;
+			}
+		}
+	}
+}
+
+.marketing__in {
+	padding: 36px 0 45px;
+}
+
+.marketing-in__num {
+	font-weight: 700;
+	font-size: 18px;
+	align-self: flex-start;
+	color: #303030;
+
+	transition: all .3s;
+}
+
+.marketing-in__text {
+	font-weight: 700;
+	font-size: 18px;
+	text-align: center;
+
+	color: #303030;
+	transition: all .3s;
+
+	@media($media_sm) {
+		margin-top: 20px;
+		font-size: 18px;
+	}
+}
+
+.marketing-in__img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
+	opacity: 0;
+	transition: all .3s;
+}
+
+.marketing-in__icon {
+	&--hidden {
+		display: none;
+	}
+}

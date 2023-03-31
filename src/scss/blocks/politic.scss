@@ -1,0 +1,60 @@
+.politic {
+  &__container {
+  }
+  &__body {
+    padding-bottom: 60px;
+
+    @media (max-width: 800px) {
+      padding-bottom: 45px;
+    }
+  }
+  &__title {
+    font-family: "FuturaPT";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 114%;
+    text-transform: uppercase;
+    color: #151515;
+    margin-bottom: 23px;
+
+    @media (max-width: 800px) {
+      font-size: 20px;
+    }
+  }
+  &__text {
+    font-family: "FuturaPT";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    color: #858585;
+    max-width: 895px;
+    width: 100%;
+
+    @media (max-width: 800px) {
+      font-size: 16px;
+    }
+
+    & ul {
+      display: block;
+      padding-left: 30px;
+
+      @media (max-width: 800px) {
+        padding-left: 25px;
+      }
+    }
+    & li {
+      font-family: "FuturaPT";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 133%;
+      color: #858585;
+
+      @media (max-width: 800px) {
+        font-size: 16px;
+      }
+    }
+  }
+}

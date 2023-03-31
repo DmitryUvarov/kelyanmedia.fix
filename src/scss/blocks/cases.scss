@@ -1,0 +1,144 @@
+.cases__main {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin-top: 45px;
+
+	@media($media_md2) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@media($media_sm2) {
+		grid-template-columns: 1fr;
+		grid-gap: 0;
+	}
+}
+
+.cases {
+	padding: 55px 0 82px;
+}
+
+.cases__type {
+	font-family: FuturaPT;
+	font-weight: 400;
+	font-size: 18px;
+	margin-bottom: 7px;
+	color: #FFFFFF;
+}
+
+.cases__title {
+	font-family: FuturaPT;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+}
+
+.cases__link {
+	font-family: FuturaPT;
+	font-weight: 700;
+	font-size: 18px;
+	color: #FFFFFF;
+	align-self: flex-end;
+	margin-top: 25px;
+	transition: all .3s;
+
+	&:hover {
+		color: rgb(79, 110, 164);
+	}
+
+	img {
+		width: 12px;
+		height: 10px;
+		margin-left: 14px;
+	}
+}
+
+.cases__bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 0;
+}
+
+.cases__item {
+	position: relative;
+	height: 317px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-end;
+	padding: 22px 11px;
+
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, .4);
+		z-index: 1;
+		opacity: 0;
+
+		transition: all .3s;
+	}
+
+	&:hover {
+		&:after {
+			opacity: 1;
+		}
+
+		.cases__type,
+		.cases__title,
+		.cases__link {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+	
+	@media($media_lg3) {
+		height: 200px;
+	}
+}
+
+.cases__type,
+.cases__title,
+.cases__link {
+	position: relative;
+	z-index: 2;
+	opacity: 0;
+	visibility: hidden;
+
+	transition: all .3s;
+}
+
+.cases__other {
+	transition: all .3s;
+	&:hover {
+		color: rgb(79, 110, 164);
+	}
+	img {
+		width: 19px;
+		height: 15px;
+		margin-left: 14px;
+	}
+
+	background: #F1F1F1;
+	color: #000;
+	font-family: FuturaPT;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 19px;
+
+	color: #303030;
+
+
+	@media($media_sm2) {
+		background: transparent;
+	}
+}

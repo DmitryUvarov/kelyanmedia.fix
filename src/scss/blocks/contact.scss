@@ -1,0 +1,77 @@
+.contact__input {
+	border: 1px solid #858585;
+	border-radius: 999px;
+	height: 57px;
+	font-weight: 400;
+	font-size: 18px;
+	padding: 20px 10px 20px 20px;
+	background: transparent;
+	color: $white;
+
+	&::placeholder {
+		color: #858585;
+	}
+}
+
+.contact {
+	background-image: url('../img/bg-main.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 27px 0 52px;
+}
+
+.contact__main {
+	margin: 31px auto 0;
+	max-width: 770px;
+	font-family: FuturaPT;
+	grid-gap: 20px 10px;
+
+	@media($media_sm) {
+		justify-content: flex-start;
+		flex-direction: column;
+	}
+}
+
+.contact__btn {
+	border: 2px solid #4F6EA4;
+	font-weight: 700;
+	font-size: 17px;
+	height: 57px;
+
+	transition: all .3s;
+
+	color: #4F6EA4;
+	border-radius: 45px;
+
+	@media($media_sm) {
+		padding: 20px;
+	}
+
+	&--brandbook {
+		flex-basis: 0 !important;
+		padding: 0 25px;
+		height: 47px;
+
+		svg {
+			margin-left: 15px;
+		}
+
+		&:hover {
+			color: #fff;
+			background: #4F6EA4;
+
+			path {
+				stroke: #fff;
+			}
+		}
+
+		path {
+			transition: all .3s;
+		}
+	}
+}
+
+.contact__input,
+.contact__btn {
+	flex-basis: 32%;
+}

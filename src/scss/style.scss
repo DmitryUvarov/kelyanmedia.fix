@@ -1,0 +1,52 @@
+@import "components/vars";
+@import "fonts";
+@import "components/mixins";
+@import "components/classes";
+@import "components/normalize";
+
+// reset
+@import "components/reset";
+@import "components/default";
+
+// vendors
+@import "vendor/swiper-bundle";
+@import "vendor/aos";
+
+// blocks
+@import "blocks/header";
+@import "blocks/header-blog";
+@import "blocks/footer";
+@import "blocks/footer-blog";
+@import "blocks/modal";
+
+@import "blocks/km-text";
+@import "blocks/advantages";
+@import "blocks/services";
+@import "blocks/contact";
+@import "blocks/clients-reviews";
+@import "blocks/order";
+@import "blocks/breadcrumbs";
+@import "blocks/blog";
+@import "blocks/article";
+@import "blocks/burger";
+@import "blocks/cases";
+@import "blocks/works";
+@import "blocks/website-dev";
+@import "blocks/faq";
+@import "blocks/marketing";
+@import "blocks/seo";
+@import "blocks/about";
+@import "blocks/brandbook";
+@import "blocks/smm";
+@import "blocks/context";
+@import "blocks/work";
+@import "blocks/lift-btn";
+@import "blocks/stats";
+@import "blocks/text-block";
+@import "blocks/politic";
+@import "blocks/modal-hyst";
+@import "blocks/quiz";
+@import "blocks/blockb";
+@import "blocks/thanks";
+
+

@@ -1,0 +1,71 @@
+	<footer class="footer section">
+		<div class="container">
+			<div class="footer__main d-f ai-start jc-sp flex-wrap">
+				<img class="logo footer__logo" src="img/logo-black.png" alt="logo black">
+
+				<div class="footer__links footer__links--service d-f flex-direction-column ai-start">
+					<h3 class="footer__h3">информация:</h3>
+					<a class="footer__link" href="#">Блог</a>
+					<a class="footer__link" href="#">Кейсы</a>
+					<a class="footer__link" href="#">О нас</a>
+				</div>
+
+				<div class="footer__links footer__links--service d-f flex-direction-column ai-start">
+					<h3 class="footer__h3">услуги:</h3>
+					<a class="footer__link" href="#">Разработка сайтов</a>
+					<a class="footer__link" href="#">Интернет маркетинг</a>
+					<a class="footer__link" href="#">SEO оптимизация</a>
+					<a class="footer__link" href="#">Создание брендбука</a>
+					<a class="footer__link" href="#">SMM</a>
+					<a class="footer__link" href="#">Контекстная реклама</a>
+				</div>
+
+				<div class="footer__links d-f flex-direction-column ai-start">
+					<h3 class="footer__h3">контакты:</h3>
+					<a class="footer__link" href="tel:+998333393334">+998 33 339 33 34</a>
+					<a class="footer__link" href="mailto:kelyanmedia@gmail.com">kelyanmedia@gmail.com</a>
+					<div class="footer__icons d-f ai-cen">
+						<a href="#"><img src="img/icons/icons.svg#instagram" alt="instagram icon"></a>
+						<a href="#"><img src="img/icons/icons.svg#telegram" alt="telegram icon"></a>
+						<a href="#"><img src="img/icons/icons.svg#facebook" alt="facebook icon"></a>
+						<a href="#"><img src="img/icons/icons.svg#youtube" alt="youtube icon"></a>
+						<a class="footer__link" href="#">kelyanmedia</a>
+					</div>
+				</div>
+
+				<img class="logo" src="img/logo-black.png" alt="logo black">
+			</div>
+
+			<div class="footer-bottom__links d-f ai-cen jc-sp">
+				<a href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+				<a href="#">ЧТО МЫ ПРЕДОСТАВЛЯЕМ</a>
+				<a href="#">НАПРАВЛЕНИЯ ДЛЯ БИЗНЕСА</a>
+				<a href="#">СОГЛАСИЕ НА ОБРАБОТКУ ДАННЫХ</a>
+			</div>
+
+			<p class="footer__km">2020-2023 © KELYAN MEDIA</p>
+		</div>
+	</footer>
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+	<script>
+		const myModal = new HystModal({
+			linkAttributeName: 'data-hystmodal',
+			catchFocus: true,
+			waitTransitions: true,
+			closeOnEsc: false,
+			beforeOpen: function(modal){
+				console.log('Message before opening the modal');
+				console.log(modal); //modal window object
+			},
+			afterClose: function(modal){
+				console.log('Message after modal has closed');
+				console.log(modal); //modal window object
+			},
+		});
+	</script>
+	</body>
+
+	</html>

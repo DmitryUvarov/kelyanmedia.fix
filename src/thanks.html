@@ -1,0 +1,92 @@
+@@include('html/head.html', {
+"title": "Главная"
+})
+
+
+<div class="pos-r">
+    @@include('html/km-text.html', {})
+
+    <section class="thanks">
+        <div class="container">
+            <div class="thanks__main d-f ai-cen">
+                <div class="thanks__left">
+                    <h1 class="thanks__title">Успешно! C вами свяжется менеджер
+                        компании Kelyanmedia и вышлет
+                        необходимую информацию.</h1>
+                    <p class="thanks__desc"> У нас есть очень ценные материалы, для того чтобы вам понять, насколько верно вы развиваете ваш
+                        бизнес в интернете и сколько денег потенциально можете потерять.</p>
+                    <div class="thanks__wrapper__form">
+                        <h2 class="thanks__form__title">
+                            Оставить заявку на получение чек-листов
+                        </h2>
+                        <form class="thanks__form" action="" method="post">
+                            <div class="control__input">
+                                <input type="text" name="name" placeholder="Ваше имя*" required>
+                            </div>
+                            <div class="control__input">
+                                <input type="text" name="phone" placeholder="Номер телефона*" required>
+                            </div>
+                            <div class="control__input">
+                                <input type="text" name="email" placeholder="E-mail">
+                            </div>
+                            <div class="control__input">
+                                <select name="form[sort]" data-class-modif="form">
+                                    <option value="1" selected>Учредитель</option>
+                                    <option value="2">Исполнительный директор</option>
+                                    <option value="3">Директор по маркетингу</option>
+                                    <option value="4">Другое</option>
+                                </select>
+                            </div>
+                            <div class="control__input">
+                                <button class="btn__shadow btn__shadow_dark">
+                                    <span>
+                                        Получить гайд
+                                    </span>
+                                    <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.42857 1L14 6.5L8.42857 12M1 6.5H14" stroke="#4F6EA4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <label class="wrapper__checkbox wrapper__checkbox__white">Я согласен с условиями обработки <br> персональных данных
+                                <input type="checkbox" checked="checked" class="check-highload">
+                                <span class="highload2"></span>
+                            </label>
+                        </form>
+                    </div>
+                </div>
+                <div class="thanks__right">
+                    <div class="documents">
+                        <div class="documents__item">
+                            <img src="img/thanks/doc_1.png" alt="">
+                            <p class="documents__desc"> Проверьте, насколько <br> эффективно ваш сайт <br> приносит вам деньги</p>
+                        </div>
+                        <div class="documents__item">
+                            <img src="img/thanks/doc_2.png" alt="">
+                            <p class="documents__desc"> Какой логотип и <br> фирменный стиль будет <br> визуально притягивать
+                                <br> больше клиентов</p>
+                        </div>
+                        <div class="documents__item">
+                            <img src="img/thanks/doc_3.png" alt="">
+                            <p class="documents__desc">Как узнать что вы <br> недополучаете клиентов <br> и их забирают
+                                <br> конкуренты</p>
+                        </div>
+                        <div class="documents__item">
+                            <img src="img/thanks/doc_4.png" alt="">
+                            <p class="documents__desc">Как понять вам нужна <br> SEO оптимизация или нет</p>
+                        </div>
+                        <div class="documents__item">
+                            <img src="img/thanks/doc_5.png" alt="">
+                            <p class="documents__desc">Чек-лист: как проверить <br> что ваши соцсети <br> оформлены хорошо</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    @@include('html/modal-quiz.html', {})
+    @@include('html/modal-blog.html', {})
+
+<!--    @@include('html/footer.html', {})-->
+</div>

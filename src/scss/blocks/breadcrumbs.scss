@@ -1,0 +1,11 @@
+.breadcrumbs {
+	font-weight: 400;
+	font-size: 13px;
+	color: #858585;
+	margin: 64px 0 24px;
+	font-family: SFUIDisplay;
+
+	@media($media_sm2) {
+		margin: 30px 0 24px;
+	}
+}
