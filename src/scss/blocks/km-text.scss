@@ -138,15 +138,6 @@
       flex-direction: column;
     }
 
-    p {
-      margin: 32px 0;
-      writing-mode: vertical-rl;
-      pointer-events: none;
-      user-select: none;
-      font-size: 24px;
-      text-transform: uppercase;
-    }
-
     &--header {
       flex-direction: row;
 
@@ -161,6 +152,15 @@
         margin: 0 50px;
       }
     }
+  }
+
+  .scroll__title {
+    margin: 32px 0;
+    writing-mode: vertical-rl;
+    pointer-events: none;
+    user-select: none;
+    font-size: 24px;
+    text-transform: uppercase;
   }
 
   .scroll__round {
@@ -230,15 +230,6 @@
       align-items: center;
     }
 
-    p {
-      margin: 32px 0;
-      writing-mode: vertical-rl;
-      pointer-events: none;
-      user-select: none;
-      font-size: 24px;
-      text-transform: uppercase;
-    }
-
     &--header {
       flex-direction: row;
 
@@ -253,6 +244,15 @@
         margin: 0 50px;
       }
     }
+  }
+
+  .scroll__title {
+    margin: 32px 0;
+    writing-mode: vertical-rl;
+    pointer-events: none;
+    user-select: none;
+    font-size: 24px;
+    text-transform: uppercase;
   }
 
   .scroll__round {
