@@ -1,21 +1,20 @@
-    const html = document.querySelector('html'),
-    checkboxs = document.querySelectorAll('.checkbox1'),
-    burger = document.querySelector('.burger'),
-    round = document.querySelector('.round'),
-    headerMain = document.querySelector('.header__main');
 
-    checkboxs.forEach(checkbox => {
-        checkbox.addEventListener('click', () => {
-            checkbox.classList.toggle('active');
-            html.classList.toggle('active');
-            burger.classList.toggle('active');
-            round.classList.toggle('active');
-            headerMain.classList.toggle('active');
-        });
-    });
-
-
-
+     function menuInit() {
+        if (document.querySelector(".hamburger ")) {
+            document.addEventListener("click", function (e) {
+                if (e.target.closest('.hamburger ')) {
+                    document.documentElement.classList.toggle("menu-open");
+                }
+            });
+        };
+    }
+    export function menuOpen() {
+        document.documentElement.classList.add("menu-open");
+    }
+    export function menuClose() {
+        document.documentElement.classList.remove("menu-open");
+    }
+    menuInit()
 
 document.addEventListener('DOMContentLoaded', () => {
     const htmlTag = document.documentElement;

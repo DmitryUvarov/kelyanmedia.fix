@@ -176,24 +176,24 @@
   }
 }
 
-.checkbox1:checked + label > .hamburger1 > .bar1 {
+.menu-open .hamburger1 > .bar1 {
   transform: rotate(45deg);
   transform-origin: 5%;
   width: 41px;
   background-color: $white;
 }
 
-.checkbox1:checked + label > .hamburger1 > .bar2 {
+.menu-open .hamburger1 > .bar2 {
   transform: translateX(-40px);
   background-color: transparent;
 }
 
-.checkbox1:checked + label > .hamburger1 > .bar3 {
+.menu-open .hamburger1 > .bar3 {
   transform: translateX(40px);
   background-color: transparent;
 }
 
-.checkbox1:checked + label > .hamburger1 > .bar4 {
+.menu-open .hamburger1 > .bar4 {
   transform-origin: 5%;
   transform: rotate(-45deg);
   width: 41px;
@@ -207,7 +207,7 @@
   z-index: 10;
   transition: all 0.5s;
 
-  &.active {
+  .menu-open & {
     visibility: hidden;
     opacity: 0;
   }
